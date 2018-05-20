@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    platform:  "postgres"
+    url: "jdbc:postgresql://database:5432/simplecrudapp"
+    username: "postgres"
+    password: "postgres"
+    driverClassName: "org.postgresql.Driver"
