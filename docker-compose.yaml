@@ -1,0 +1,14 @@
+version: '3'
+services:
+  database:
+    image: postgres:10.4
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER:      "postgres"
+      POSTGRES_PASSWORD:  "postgres"
+      POSTGRES_DB:        "simplecrudapp"
+  simplecrudapp:
+    image: artur-zaripov/simplecrudapp
+    ports:
+      - "8080:8080"
